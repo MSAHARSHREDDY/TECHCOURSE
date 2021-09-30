@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>LOGO</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="techcourse.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script  src="main.js"></script>
+</head>
+
+<body>
+	
+<section class="logo">
+	<h1 class="headinglogo">WELCOME TO TECHCOURSE</h1>
+
+	
+	<a href="techcourse.html">
+		<div class="button">
+	<button type="submit" class="btn btn-primary  mt-3" style="margin-left: 35%; width: 300px;position: absolute;">EXPLORE COURSES</button>
+        </div>
+     </a> 
+   
+
+	<ul class="nav float-right" style="margin-top: -30%;">
+		<li class="nav-item">
+			<a href="#" class="nav-link " data-target="#login" data-toggle="modal" class="list" >LOGIN</a>
+		</li>
+		<li class="nav-item" class="logoanchor">
+			<a href="#" class="nav-link" data-target="#signup" data-toggle="modal" class="list">SIGNUP</a>
+		</li>
+	</ul>
+
+	<!------------------for login--------------->
+	<div class="modal fade" id="login">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				
+					<div class="modal-header" style="background:whitesmoke;">
+						<h4 style="color: red;margin-left: 40%;font-weight: bold;" class="login">LOGIN</h4>
+						<button type="submit" class="close" data-dismiss="modal" style="outline:none;">&times;</button>
+					</div><!--end of modal header-->
+
+					<div class="modal-body">
+						<label style="font-weight: bold;">EMAIL:-</label>
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<div class="input-group-text">
+									<i class="fa fa-envelope" aria-hidden="true"></i>
+								</div>
+							</div>
+							<input type="text" name="" class="form-control" autocomplete="off" id="email">
+						</div>
+						<span id="message5" style="color: red;font-weight:bold;"></span>
+      					<span id="message5.5" style="color:green;font-weight: bold;"></span>
+      					<br>
+						<br>
+
+						<label style="font-weight:bold">PASSWORD:-</label>
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<div class="input-group-text">
+									<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+								</div>
+							</div>
+							<input type="password" name="" class="form-control" autocomplete="off" id="pass">
+						</div>
+						<span id="message6" style="color: red;font-weight:bold;"></span>
+      					<span id="message6.6" style="color:green;font-weight: bold;"></span>
+      					<br>
+						
+					</div><!--end of modal-body-->
+
+					<div class="modal-footer" style="background:whitesmoke">
+						<form onsubmit="return login()">
+						<button type="submit" class="btn btn-success" style="font-weight:bold;">LOGIN</button>
+					    </form>
+					</div><!--end of footer-->
+
+
+
+
+				</div><!--end of modal-content-->
+			</div><!--end of modal-dialog-->
+		</div><!--end of modal-->
+	
+<!---------------------end of login-------------------->
+
+
+<!-------------------for signup login-------------->
+
+	<div class="modal fade" id="signup">
+		<div class="modal-dialog modal-dialog-centered ">
+         <div class="modal-content">	
+
+				<div class="modal-header" style="background: whitesmoke;">
+					<h4 style="color: red;margin-left: 40%;font-weight: bold;" class="signup">SIGNUP</h4>
+					<button  style="outline:none;" type="submit" class="close" data-dismiss="modal">&times;</button>
+				</div><!--model-header end-->
+
+					<div class="modal-body" >
+            
+
+					<label style="font-weight:bold;">USERNAME:</label>
+      					<div class="input-group">
+      						<div class="input-group-prepend">
+      							<div class="input-group-text">
+
+      								<i class="fa fa-user" aria-hidden="true"></i>
+      							</div>
+      						</div>
+      						<input type="text" required="" class="form-control" autocomplete="off" id="user"><br>
+      					</div><!--end of input-group-->
+      					<span id="message1" style="color: red;font-weight:bold;"></span>
+      					<span id="message1.1" style="color:green;font-weight: bold;"></span>
+      					<br>
+
+
+      					<label style="font-weight:bold">EMAIL:</label>
+      					<div class="input-group">
+      						<div class="input-group-prepend">
+      							<div class="input-group-text">
+      								<i class="fa fa-envelope" aria-hidden="true"></i>
+      							</div>
+      						</div>
+      						<input type="text" name="" class="form-control" autocomplete="off" id="email">
+      						 </div><!--end of input-group-->
+      						 <span id="message2" style="color:red;font-weight: bold;"></span>
+      						<span id="message2.2" style="color:green;font-weight:bold;"></span>
+
+      					<br>
+
+
+      					<label style="font-weight:bold">PASSWORD:-</label>
+      					<div class="input-group">
+      						<div class="input-group-prepend">
+      							<div class="input-group-text">
+      								<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+      							</div>
+      						</div>
+      						<input type="password" name="name" class="form-control" autocomplete="off" id="pass">
+      						
+      					</div><!--end of input-group-->
+      					<span id="message3" style="color:red;font-weight: bold;"></span>
+      						<span id="message3.3" style="color:green;font-weight:bold;"></span>
+      					<br>
+
+
+      					<label style="font-weight:bold">CONFIRM PASSWORD:-</label>
+      					<div class="input-group">
+      						<div class="input-group-prepend">
+      							<div class="input-group-text">
+      								<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+      							</div>
+      						</div>
+      						<input type="password" name="name" class="form-control" autocomplete="off" id="cpass">
+      						</div><!--end of input-group-->
+      						<span id="message4" style="color:red;font-weight:bold;"></span>
+      						<span id="message4.4" style="color:green;font-weight:bold"></span>
+
+					</div><!--end of modal body-->
+
+
+					<div class="modal-footer" style="background:whitesmoke;">
+
+					<form onsubmit="return signup()">	
+					<input type="submit" value="SIGNUP" class="btn btn-success" style="font-weight:bold">
+					</form>
+
+						<button type="submit" class="btn btn-danger" data-dismiss="modal" style="font-weight: bold;">CLOSE</button>
+					</div><!--end of modal-footer-->
+
+			</div>
+		</div>
+	</div>
+	
+
+<!---------------------------end for signup--------------->
+			
+	
+	
+
+</section>
+
+</body>
+</html>
+
+
+
+	
