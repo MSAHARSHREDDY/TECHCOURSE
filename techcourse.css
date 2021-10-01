@@ -297,6 +297,56 @@ a:hover
 		height: 250px;
 
 	}
+	.card
+    {
+	
+/*when their is box shadow you cannot use transtion*/
+	animation:saharsh 5s infinite;
+	/*animation: saharsh1 6s infinite;*/
+    }
+
+@keyframes saharsh
+{
+	0%
+	{
+		box-shadow: 3px 3px 10px 2px whitesmoke inset,-3px -3px 10px 2px whitesmoke inset;
+		
+
+	}
+
+	20%
+	{
+		box-shadow: 3px 3px 10px 2px #7fffd4 inset,-3px -3px 10px 2px #7fffd4  inset;		
+		
+	}
+
+	40%
+	{
+		box-shadow: 3px 3px 10px 2px  #ffefdb inset,-3px -3px 10px 2px #ffefdb inset;		
+		
+	}
+
+	60%
+	{
+		box-shadow: 3px 3px 10px 2px 	#b4eeb4 inset,-3px -3px 10px 2px 	#b4eeb4 inset;	
+	
+	}
+
+	80%
+	{
+		box-shadow: 3px 3px 10px 2px #7fffd4 inset,-3px -3px 10px 2px #7fffd4 inset;		
+		
+	}
+
+	100%
+	{
+		box-shadow: 3px 3px 10px 2px whitesmoke inset,-3px -3px 10px 2px whitesmoke inset;
+		
+		
+	}
+}
+
+
 	
 
 }
